@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SISRH - REGISTRO DE FUNCIONARIOS</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+	crossorigin="anonymous">
+</head>
+<body>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+		crossorigin="anonymous"></script>
+		<script src="script.js" defer></script>
+
+	<nav
+		class="navbar col-11 m-auto navbar-expand-lg position-absolute bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html">SISRH</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="index.html">Inicio</a></li>
+					<li class="nav-item"><a class="nav-link" href="funcionarios.html">Funcionarios</a></li>
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="unidade.html">Unidades</a></li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" role="button"
+						data-bs-toggle="dropdown" aria-expanded="false"> Registrar </a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="resgistrarfuncionarios.html">Funcionarios</a></li>
+							<li><a class="dropdown-item" href="registrarunidade.html">Unidade</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="ferias.html">Férias</a></li>
+						</ul></li>
+					<li class="nav-item"><a class="nav-link disabled"></a></li>
+				</ul>
+				<form class="d-flex" role="search">
+					<input class="form-control me-2" type="search" placeholder="Pesquisar"
+						aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Buscar</button>
+				</form>
+
+			</div>
+		</div>
+
+	</nav>
+
+
+	<form class="row g-3 position-absolute m-5 col-11">
+		<div class="col-md-4">
+			<label for="inputNome" class="nome">Nome Completo</label> <input
+				type="text" class="form-control" id="inputNome">
+		</div>
+		<div class="col-md-2">
+			<label for="inputMatricula" class="matricula">Matricula</label> <input
+				type="text" class="form-control" id="inputMatricula">
+		</div>
+		<div class="col-md-2">
+			<label for="inputCpf" class="cpf">CPF</label> <input
+				type="text" class="cpf" id="inputCpf">
+		</div>
+		<div class="col-md-2">
+			<label for="inputRg" class="rg">RG</label> <input type="text"
+				class="form-control" id="inputRg">
+		</div>
+				<div class="col-md-1">
+			<label for="inputData" class="dataexpedicao">Expedição</label> <input
+				type="date" class="form-control" id="date">
+		</div>
+				<div class="col-md-2">
+			<label for="inputPis" class="pis">PIS</label> <input
+				type="text" class="form-control" id="inputPis">
+		</div>
+		<div class="col-md-1">
+			<label for="inputData" class="datanascimento">Nascimento</label> <input
+				type="date" class="form-control" id="date">
+		</div>
+		<div class="col-md-1">
+			<label for="inputState" class="genero">Sexo</label> <select
+				id="inputState" class="form-select">
+				<option selected></option>
+				<option>Masculino</option>
+				<option>Feminino</option>
+				<option>Outro</option>
+			</select>
+		</div>
+		<div class="col-1">
+			<label for="Cep" class="cep">CEP</label> <input
+				type="add" class="form-control" id="cep"
+				placeholder="23815-310">
+		</div>
+		<div class="col-4">
+			<label for="endereço" class="endereco">Endereço</label> <input
+				type="text" class="form-control" id="endereço"
+				placeholder="R. Gen. Bocaiúva">
+		</div>
+		<div class="col-1">
+			<label for="numero" class="numero">Numero</label> <input
+				type="text" class="form-control" id="numero"
+				placeholder="636">
+		</div>
+		<div class="col-1">
+			<label for="complemento" class="complemento">Complemento</label> <input
+				type="text" class="form-control" id="complemento"
+				placeholder="qd, lt, ap">
+		</div>
+		<div class="col-md-2">
+			<label for="cidade" class="cidade">Cidade</label> <input
+				type="text" class="form-control" id="localidade">
+		</div>
+		<div class="col-md-2">
+			<label for="municipio" class="municipio">Municipio</label> <input
+				type="text" class="form-control" id="municipio">
+		</div>
+		<div class="col-md-2">
+			<label for="inputState" class="unidade">Unidade</label> <select
+				id="inputState" class="form-select">
+				<option selected></option>
+				<option>UBS Vila Margrida</option>
+			</select>
+		</div>
+
+
+				<div class="col-md-2">
+			<label for="inputTelefone" class="telefone">Telefone</label> <input
+				type="tel" class="form-control" id="inputTelefone">
+		</div>
+						<div class="col-md-2">
+			<label for="inputCelular" class="celular">Celular</label> <input
+				type="tel" class="form-control" id="inputCelular">
+		</div>
+		<div class="col-12">
+			<button type="submit" class="btn btn-primary">Registrar</button>
+		</div>
+	</form>
+	
+
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+	<h1>Faça o seu cadastro</h1>
+
+	<form th:action="@{/unidade}" th:object="${unidade}" method="post">
+		<div>
+			<label th:for="nome">Nome:</label> <input type="text"
+				th:field="*{nomeunidade}" placeholder="Seu Nome" required="required">
+		</div>
+
+		<div>
+			<label th:for="nascimento">Data de nascimento:</label> <input
+				type="date" th:field="*{nascimento}" required="required">
+		</div>
+
+		<div>
+			<label th:for="login">Apelido:</label> <input type="text"
+				th:field="*{login}" placeholder="apelido" required="required">
+		</div>
+
+		<div>
+			<label th:for="senha">Senha:</label> <input type="password"
+				th:field="*{senha}" placeholder="******" minlength="8"
+				required="required">
+		</div>
+
+		<div>
+			<label>Concordo com os termos de serviço</label> <input
+				type="checkbox" th:field="*{aceite}" required="required">
+		</div>
+
+		<div>
+			<button type="submit">Enviar</button>
+		</div>
+	</form>
+</body>
+</html>
